@@ -20,7 +20,7 @@
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
-  z-index: -10;
+  z-index: -210;
 }
 
 .section__subheader {
@@ -232,6 +232,7 @@ nav {
   margin-top: 4rem;
   display: grid;
   gap: 2rem;
+  
 }
 
 .steps__card {
@@ -963,11 +964,13 @@ input {
 }
 
 .dialogbox{
-  border: 2px solid ;
+  border: 2px solid green;
   height:100vh;
   width:100%;
   position: fixed;
   top: 0;
+  z-index: 1111;
+  border: 2px solid red;
   animation: animation ease 0.5s 1;
   left: 0;background-color: rgba(0, 0, 0, 0.621);display: flex;justify-content: center;align-items: center;display: block;
 }
@@ -983,8 +986,6 @@ input {
 }
 
 .dialogclose{
-
-  border: 2px solid black;
   margin-inline: auto;
   z-index: 1111;
   height: 100%;
@@ -992,7 +993,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.605);
+  background-color: red;
 }
 
 /* End of sign up from css */
