@@ -84,16 +84,38 @@ ScrollReveal().reveal(".download__links", {
 
 function signupform(){
   document.querySelector(".dialogbox").style.display="block";
+  document.querySelector("body").style.overflow="hidden";
 }
 
 function closesignuppage(){
   document.querySelector(".dialogbox").style.display="none";
+  document.querySelector("body").style.overflow="auto";
 }
 
 document.querySelector(".dialogclose").addEventListener("click",(e)=>{
   if (e.target.classList.contains("dialogclose")) {
-
+    document.querySelector("body").style.overflow="auto";
   document.querySelector(".dialogbox").style.display="none";
+  
+ 
+}
+});
+
+
+function signinform(){
+  document.querySelector(".dialogbox1").style.display="block";
+  document.querySelector("body").style.overflow="hidden";
+}
+
+function closesignuppage1(){
+  document.querySelector(".dialogbox1").style.display="none";
+  document.querySelector("body").style.overflow="auto";
+}
+
+document.querySelector(".dialogclose1").addEventListener("click",(e)=>{
+  if (e.target.classList.contains("dialogclose1")) {
+    document.querySelector("body").style.overflow="auto";
+  document.querySelector(".dialogbox1").style.display="none";
   
  
 }

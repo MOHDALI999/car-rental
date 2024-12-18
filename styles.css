@@ -71,11 +71,10 @@ ul {
 html,
 body {
   scroll-behavior: smooth;
+  font-family: "Mulish", sans-serif;
+  position: relative;
 }
 
-body {
-  font-family: "Mulish", sans-serif;
-}
 
 header {
   position: relative;
@@ -963,17 +962,51 @@ input {
   color: #ef4444;
 }
 
-.dialogbox{
-  border: 2px solid green;
+.dialogbox1{
+  border: 2px solid ;
   height:100vh;
   width:100%;
-  position: fixed;
+  position: absolute;
   top: 0;
-  z-index: 1111;
-  border: 2px solid red;
+  z-index: 111188888;
   animation: animation ease 0.5s 1;
-  left: 0;background-color: rgba(0, 0, 0, 0.621);display: flex;justify-content: center;align-items: center;display: block;
+  left: 0;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
+
+.dialogclose1{
+  margin-inline: auto;
+  z-index: 1111;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.dialogbox{
+  border: 2px solid ;
+  height:100vh;
+  width:100%;
+  position: absolute;
+  top: 0;
+  z-index: 111188888;
+  animation: animation ease 0.5s 1;
+  left: 0;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+
 
 @keyframes animation{
   from{
