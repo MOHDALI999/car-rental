@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/Logo_maker_project-transformed-transformed-mfC08h3an-transformed-removebg.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | OPENROAD RENTAL</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">OPENROAD RENTALq</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rent">Rent</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#ride">Ride</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav__links__btn">
+            <button class="btn" >Sign Up</button>
+          </li>
+          <li class="nav__links__btn">
+            <button class="btn">Sign In</button>
+          </li>
+        </ul>
+        <div class="nav__btns">
+<!-- this is signup form -->
+          <button class="btn btn__primary" onclick="signupform()">Sign Up</button>
+          <div class="dialogbox">
+            
+              <dialog open class="dialogclose" style="border: 2px solid black;margin-inline: auto;z-index: 1111;height: 100%;width: 100%;display: flex;
+              justify-content: center;
+              align-items: center;background-color: rgba(0, 0, 0, 0.605);">
+              <i class="fa-regular fa-circle-xmark" onclick="closesignuppage()" style="position: absolute;right: 10px;top: 10px;font-size: 30px;cursor: pointer;z-index: 111;color: white;"></i>
+
+               <!-- form was start -->
+                    <form class="modern-form">
+                      <div class="form-title">Sign Up</div>
+
+                      <div class="form-body">
+                        <div class="input-group">
+                          <div class="input-wrapper">
+                            <svg fill="none" viewBox="0 0 24 24" class="input-icon">
+                              <circle
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                r="4"
+                                cy="8"
+                                cx="12"
+                              ></circle>
+                              <path
+                                stroke-linecap="round"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                d="M5 20C5 17.2386 8.13401 15 12 15C15.866 15 19 17.2386 19 20"
+                              ></path>
+                            </svg>
+                            <input
+                              required=""
+                              placeholder="Username"
+                              class="form-input"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="input-group">
+                          <div class="input-wrapper">
+                            <svg fill="none" viewBox="0 0 24 24" class="input-icon">
+                              <path
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                              ></path>
+                            </svg>
+                            <input
+                              required=""
+                              placeholder="Email"
+                              class="form-input"
+                              type="email"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="input-group">
+                          <div class="input-wrapper">
+                            <svg fill="none" viewBox="0 0 24 24" class="input-icon">
+                              <path
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                d="M12 10V14M8 6H16C17.1046 6 18 6.89543 18 8V16C18 17.1046 17.1046 18 16 18H8C6.89543 18 6 17.1046 6 16V8C6 6.89543 6.89543 6 8 6Z"
+                              ></path>
+                            </svg>
+                            <input
+                              required=""
+                              placeholder="Password"
+                              class="form-input"
+                              type="password"
+                            />
+                            <button class="password-toggle" type="button">
+                              <svg fill="none" viewBox="0 0 24 24" class="eye-icon">
+                                <path
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"
+                                ></path>
+                                <circle
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  r="3"
+                                  cy="12"
+                                  cx="12"
+                                ></circle>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="submit-button" type="submit">
+                        <span class="button-text">Create Account</span>
+                        <div class="button-glow"></div>
+                      </button>
+
+                      <div class="form-footer">
+                        <a class="login-link" href="#">
+                          Already have an account? <span>Login</span>
+                        </a>
+                      </div>
+                    </form>
+                <!-- form was end -->
+              </dialog>
+          </div>
+<!-- End of signup form -->
+
+<!-- this is signin form -->
+          <button class="btn btn__secondary" onclick="signinform()">Sign In</button>
+          <div class="dialogbox1">
+            
+            <dialog open class="dialogclose1" style="border: 2px solid black;margin-inline: auto;z-index: 1111;height: 100%;width: 100%;display: flex;
+            justify-content: center;
+            align-items: center;background-color: rgba(0, 0, 0, 0.605);">
+            <i class="fa-regular fa-circle-xmark" onclick="closesignuppage()" style="position: absolute;right: 10px;top: 10px;font-size: 30px;cursor: pointer;z-index: 111;color: white;"></i>
+
+           <!-- form was start -->
+
+             <form class="form">
+               <p class="form-title">Sign in to your account</p>
+                <div class="input-container">
+                  <input type="email" placeholder="Enter email">
+                  <span>
+                  </span>
+              </div>
+              <div class="input-container">
+                  <input type="password" placeholder="Enter password">
+                </div>
+                 <button type="submit" class="submit">
+                Sign in
+              </button>
+        
+              <p class="signup-link">
+                No account?
+                <a href="">Sign up</a>
+              </p>
+           </form>
+
+            <!-- form was end -->
+        
+
+ 
+          </dialog>
+        </div>
+
+
+
+<!-- this is end of signin form -->
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h1>Unlock The Freedom To Explore</h1>
+          <p>
+            Discover RentalX car rental aoptions in India with Rent a Car Select
+            from a range of car options and local specials.
+          </p>
+          <div class="header__links">
+            <button href="#">
+              Booking Ride
+            </button>
+            <button href="#">
+              Login/SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container steps__container" id="rent">
+      <p class="section__subheader">HOW IT WORKS</p>
+      <h2 class="section__header">Rentgo following 3 working steps</h2>
+      <div class="steps__grid">
+        <div class="steps__card">
+          <span><i class="ri-map-pin-fill"></i></span>
+          <h4>Choose a location</h4>
+          <p>
+            Select your desired rental location from our extensive network of
+            car rental spots.
+          </p>
+        </div>
+        <div class="steps__card">
+          <span><i class="ri-calendar-check-fill"></i></span>
+          <h4>Pick-up date</h4>
+          <p>
+            Specify the date and time you wish to pick up your car with flexible
+            scheduling options.
+          </p>
+        </div>
+        <div class="steps__card">
+          <span><i class="ri-bookmark-3-fill"></i></span>
+          <h4>Book your car</h4>
+          <p>
+            Browse through our wide range of vehicles and choose the one that
+            best suits your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <div class="service__image">
+        <img src="assets/service.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <p class="section__subheader">BEST SERVICES</p>
+        <h2 class="section__header">
+          Feel the best experience with our rental deals
+        </h2>
+        <ul class="service__list">
+          <li>
+            <span><i class="ri-price-tag-3-fill"></i></span>
+            <div>
+              <h4>Deals for every budget</h4>
+              <p>
+                From economy cars to luxury vehicles, we have something for
+                everyone, ensuring you get the best value for your money.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-wallet-fill"></i></span>
+            <div>
+              <h4>Best price guarantee</h4>
+              <p>
+                We ensure you get competitive rates in the market, so you can
+                book with confidence knowing you're getting the best deal.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-customer-service-fill"></i></span>
+            <div>
+              <h4>Support 24/7</h4>
+              <p>
+                Our dedicated team is available 24/7 to assist you with any
+                questions or concerns, ensuring a smooth rental experience.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section__container experience__container" id="ride">
+      <p class="section__subheader">CUSTOMER EXPERIENCE</p>
+      <h2 class="section__header">
+        We are ensuring the best customer experience
+      </h2>
+      <div class="experience__content">
+        <div class="experience__card">
+          <span><i class="ri-price-tag-3-fill"></i></span>
+          <h4>Competitive pricing</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-money-rupee-circle-fill"></i></span>
+          <h4>Easier Rent On Your Budget</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-bank-card-fill"></i></span>
+          <h4>Most Felxible Payment Plans</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-award-fill"></i></span>
+          <h4>The Best Extended Auto Warranties</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-customer-service-2-fill"></i></span>
+          <h4>Roadside Assistance 24/7</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-car-fill"></i></span>
+          <h4>Your Choice Of Mechanic</h4>
+        </div>
+        <img src="assets/experience.png" alt="experience" />
+      </div>
+    </section>
+
+    <section class="section__container download__container" id="contact">
+      <div class="download__grid">
+        <div class="download__content">
+          <h2 class="section__header">Download the free RentalX app</h2>
+          <p>
+            Download the RentalX app to manage your bookings, find exclusive
+            deals, and access 24/7 support, all from your mobile device.
+          </p>
+          <div class="download__links">
+            <a href="#">
+              <img src="assets/store.jpg" alt="app store" />
+            </a>
+            <a href="#">
+              <img src="assets/play.png" alt="play" />
+            </a>
+          </div>
+        </div>
+        <div class="download__image">
+          <img src="assets/download.png" alt="download" />
+        </div>
+      </div>
+
+<!-------Contact Start------->
+
+    </section>
+    <section class="contact section-padding" data-scroll-index='6'>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>Contact us</h3>
+              <span class="line"></span>
+              <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+            </div>
+            <div class="section-content">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                  <form id="contact_form" action="">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
+                      </div>
+                      <div class="col">
+                        <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
+                    <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                    <button class="btn-grad w-100 text-uppercase" type="submit" name="abc">SUBMIT</button>
+                  </form>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                  <div class="contact-info white">
+                    <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Address</p>
+                        <p class="text-uppercase">New Delhi, India</p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Phone</p>
+                        <p class="text-uppercase"><a class="text-white" href="tel:+15173977100">009900990099</a> </p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">E-mail</p>
+                        <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">yogeshsingh.now@gmail.com</a> </p>
+                      </div>
+                    </div>
+                    <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Working Hours</p>
+                        <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-------Contact End-------> 
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Our Products</h4>
+          <ul class="footer__links">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Priceline</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>About RentalX</h4>
+          <ul class="footer__links">
+            <li><a href="#">Why RentalX</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Press Centers</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Help Centers</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Partner Network</a></li>
+            <li><a href="#">Mechanics</a></li>
+            <li><a href="#">Developer</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Extras</h4>
+          <ul class="footer__links">
+            <li><a href="#">Rental Deal</a></li>
+            <li><a href="#">Repair Shop</a></li>
+            <li><a href="#">View Booking</a></li>
+            <li><a href="#">Hire Companies</a></li>
+            <li><a href="#">New Offers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <h4>RentalX</h4>
+        <p>Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-google-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
