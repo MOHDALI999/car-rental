@@ -986,7 +986,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
+  background-color: red;
 }
 
 .dialogbox{
@@ -1129,3 +1129,94 @@ input {
   background-color: #005ce6;
 }
 
+
+.email-icon{
+  position: absolute;
+  left: 35px;
+  top: 163px;
+  width: 17px;
+  height: 17px;
+  color: var(--text-secondary);
+  pointer-events: none;  
+  /* border: 2px solid red; */
+}
+
+
+.password-icon{
+  position: absolute;
+  left: 35px;
+  top: 235px;
+  width: 19px;
+  height: 17px;
+  background: none;
+  color: var(--text-secondary);
+  pointer-events: none;  
+  /* border: 2px solid red; */
+}
+
+/* ................ */
+
+
+.input-container .password-button{
+  position: absolute;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: none;
+  /* border: 2px solid red; */
+  top: 232px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.input-container .password-button:hover{
+  color: var(--primary);
+  transform: scale(1.1);
+  background: none;
+  border: none;
+}
+
+.input-container .password-button:active {
+  transform: scale(0.9);
+}
+
+.eye-password{
+  width: 16px;
+  height: 16px;
+}
+
+
+.input-container .form-input1{
+  width: 100%;
+  height: 40px;
+  padding: 0 36px;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: px;
+  background: var(--bg-input);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+
+/* Validation States */
+.form-input1:not(:placeholder-shown):valid {
+  border-color: var(--success);
+}
+
+.form-input1:not(:placeholder-shown):valid ~ .email-icon{
+  color: var(--success);
+}
+
+.form-input1:not(:placeholder-shown):invalid {
+  border-color: #ef4444;
+  animation: shake 0.2s ease-in-out;
+}
+
+.form-input1:not(:placeholder-shown):invalid ~ .email-icon{
+  color: #ef4444;
+}
